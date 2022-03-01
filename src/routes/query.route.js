@@ -1,10 +1,10 @@
 /** @format */
 
 import express from "express";
-import {
-} from "../controllers/task.controller";
+import { saveQuery } from "../controllers/query.controller";
 
 const router = express.Router();
 
+router.post("/", saveQuery);
 
 export default router;
