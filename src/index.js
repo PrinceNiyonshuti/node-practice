@@ -10,7 +10,7 @@ const server = express();
 server.get("/", (req, res) => {
 	res.status(200).json({
 		success: true,
-		message: "You successfully landed on our Todo app API",
+		message: "You successfully landed on ATLP-7 App API for Prince Backend",
 	});
 });
 
