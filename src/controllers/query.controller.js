@@ -1,8 +1,11 @@
 /** @format */
 
 import Query from "../db/model/query.model";
+import { queryValidation } from "../validation/index";
 
 export const saveQuery = async (req, res) => {
+	const { error } = queryValidation(req.body);
+	if (error) return res.status(400).json({ message: error.details[0].message });
 	const query = req.body;
 	const newQuery = new Query(query);
 	await newQuery.save();
