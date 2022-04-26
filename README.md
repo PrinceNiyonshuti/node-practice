@@ -1,2 +1,2 @@
 # Node JS Practice
-Node JS Practice , using Mongo DB and mongoose
+Node JS Practice functionality , using Mongo DB and mongoose
